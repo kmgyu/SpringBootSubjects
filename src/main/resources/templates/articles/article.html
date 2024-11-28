@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Article Details</title>
+</head>
+<body>
+<h2>Article Details</h2>
+<div th:object="${formData}">
+    <p><strong>Title:</strong> <span th:text="*{title}">Sample Title</span></p>
+    <p><strong>Content:</strong> <span th:text="*{content}">Sample Content</span></p>
+    <p><strong>Author ID:</strong> <span th:text="*{id}">Sample Author ID</span></p>
+</div>
+<a href="/articles/">Back to List</a>
+</body>
+</html>

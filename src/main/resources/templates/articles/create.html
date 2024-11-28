@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Article</title>
+</head>
+<body>
+<form action="/articles/create" method="post">
+    <label for="title">Title:</label>
+    <input id="title" name="title" type="text"><br>
+
+    <label for="content">Content:</label>
+    <input id="content" name="content" type="text"><br>
+
+    <label for="author">Author ID:</label>
+    <input id="author" name="author" type="text"><br>
+
+    <label for="password">Password:</label>
+    <input id="password" name="password" type="password"><br>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
